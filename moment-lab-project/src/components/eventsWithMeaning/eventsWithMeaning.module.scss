@@ -1,0 +1,39 @@
+.mainBlock {
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 20vh;
+}
+
+.mainText {
+    text-align: center;
+    font-family: 'MomentFont', sans-serif;
+    color: var(--text-dark-blue);
+    font-size: 3vw;
+    width: 100%;
+    margin-bottom: 4vh;
+    margin-right: 7vw;
+}
+
+.descriptionText {
+    margin-right: 8vw;
+
+    white-space: nowrap; /* Запрет переноса */
+    text-overflow: ellipsis; /* Многоточие при обрезке (опционально) */
+    font-size: 1.7vw; /* Динамический размер с ограничением */
+    font-family: 'MainFont', sans-serif;
+    text-align: center;
+    color: var(--text-dark-blue);
+    width: 100%;
+}
+
+.murashkiButton {
+    margin-right: 31vw;
+    color: #FF914D;
+    font-weight: bold;
+    text-decoration: underline;
+}

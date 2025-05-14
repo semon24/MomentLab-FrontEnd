@@ -1,0 +1,32 @@
+.mainBlock {
+    margin-top: 10vh;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerText {
+    width: 100%;
+    text-align: center;
+    margin-right: 35vw;
+    font-family: 'MomentFont', sans-serif;
+    font-size: 2.5vw;
+    color: var(--text-dark-blue);
+}
+
+.notebookBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 6vh;
+    height: 98vh;
+    width: 90vw;
+}
+
+.notebookImg {
+    width: 50vw; /* 100% ширины viewport */
+    height: auto; /* 100% высоты viewport */
+    object-fit:cover; /* Принудительное заполнение с искажением */
+  }
