@@ -1,6 +1,7 @@
 import HeaderStyles from './header.module.scss'
 import HeaderSrc from "../../assets/images/лого.svg"
 import iconButtonSrc from "../../assets/images/Vector.svg"
+import contactsSrc from "../../assets/images/contactsUp.svg"
 import { Link } from 'react-router-dom'
 
 export const Header = () => {
@@ -13,6 +14,8 @@ export const Header = () => {
             <Link to="/" className={HeaderStyles.buttonHeader}>
                 <img src={HeaderSrc} className={HeaderStyles.headerIcon}/>
             </Link>
+
+            <img className={HeaderStyles.contactImg} src={contactsSrc}/>  
         </div>
     );
 };

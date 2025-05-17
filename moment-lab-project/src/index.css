@@ -82,3 +82,11 @@ button:focus-visible {
   font-display: swap;   /* Важно для производительности */
 }
 
+@font-face {
+  font-family: 'MainBlackFont';
+  src: url('./assets/fonts/Montserrat-Black.ttf') format('truetype');
+  font-weight: normal;  /* или 400 */
+  font-style: normal;
+  font-display: swap;   /* Важно для производительности */
+}
+

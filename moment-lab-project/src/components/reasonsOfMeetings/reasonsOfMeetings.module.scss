@@ -1,0 +1,108 @@
+.reasonMainBlock {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reasonText {
+    font-family: 'MomentFont';
+    font-size: 2.5vw;
+    color: var(--text-dark-blue);
+    margin-left: 30vw;
+}
+
+.reasonDescriptionBlock {
+    margin-top: 2vh;
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.leftBlock, .rightBlock {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leftBlock {
+    width: 24vw;
+}
+
+.rightBlock {
+    width: 36vw;
+}
+
+.leftUpBlock, .rightUpBlock, .rightDownBlock, .leftDownBlock {
+    border: 0.3vw solid var(--text-orange);
+    border-radius: 1vw;
+    position: relative;
+}
+
+.leftUpBlock {
+    width: 22vw;
+    height: 60%;
+}
+
+.leftDownBlock {
+    margin-top: 3%;
+    width: 22vw;
+    height: 37%;
+}
+
+
+.rightUpBlock {
+    width: 35vw;
+    height: 40%;
+}
+
+.rightDownBlock {
+    margin-top: 3%;
+    width: 35vw;
+    height: 57%;
+}
+
+.textMain {
+    margin-top: 2vh;
+    margin-left: 1vw;
+    font-family: 'MainBlackFont';
+    color: black;
+    font-size: 1.5vw;
+}
+
+.descriptionTextMain {
+    font-family: 'MainFont';
+    color: var(--text-dark-blue);
+    font-size: 1vw;
+}
+
+.rightUpImage, .rightDownImage, .leftUpImage, .leftDownImage {
+    position: absolute;
+}
+
+.rightUpImage {
+    top: 68%;
+    left: 88%;
+}
+
+.rightDownImage {
+    top: 80%;
+    left: 89%;
+}
+
+.leftUpImage {
+    top: 82%;
+    left: 83%;
+}
+
+.leftDownImage {
+    top: 70%;
+    left: 87%;
+}

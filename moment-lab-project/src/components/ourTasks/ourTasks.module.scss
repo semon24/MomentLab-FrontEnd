@@ -1,6 +1,6 @@
 .mainBlock {
     margin-top: 10vh;
-    height: 90vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -16,6 +16,7 @@
 }
 
 .notebookBlock {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,3 +31,9 @@
     height: auto; /* 100% высоты viewport */
     object-fit:cover; /* Принудительное заполнение с искажением */
   }
+
+.splineImg {
+    width: 10vw;
+    height: auto;
+    margin-right: 45vw;
+}
