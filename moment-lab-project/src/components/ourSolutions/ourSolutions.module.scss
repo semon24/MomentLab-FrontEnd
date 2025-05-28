@@ -1,0 +1,165 @@
+.solutionBlock {
+    position: relative;
+    margin-top: 10vh;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.fonImg {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+    z-index: -1;
+    mask-image: linear-gradient(
+        to bottom, 
+        transparent 0%, 
+        rgba(0, 0, 0, 0.5) 30%,  
+        rgba(0, 0, 0, 0.5) 70%,
+        transparent 100%
+    );
+}
+
+.middleSolutionBlock {
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column
+
+}
+
+.solutionHead {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.textOurSolutions {
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointerImg {
+    padding-left: 2vw;
+    object-fit: fill;
+    width: 4vw;
+    height: 5vh;
+}
+
+.buttonAllSolutions {
+    height: 10vh;
+    width: 14vw;
+    font-size: 1.1vw;
+    font-family: 'MainBoldFont';
+    color: var(--text-orange) !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.imgArrow {
+    padding-left: 1vw;
+    font-size: 3vw;
+}
+
+.listSolutions {
+    position: relative;
+    display: flex;
+    overflow-x: auto; /* Горизонтальный скролл */
+    gap: 2vw; /* Отступ между элементами */
+    width: 100%;
+    height: 60vh;
+
+    flex-wrap: nowrap;
+    scrollbar-width: auto;
+    padding: 1vw 1vh;
+}
+
+.firstCards, .secondCards {
+    flex: 0 0 20vw;
+    height: 50vh;
+    border: solid 0.2vw;
+    min-width: 10rem;
+    border-color: #7F94CA;
+    padding: 0.5vw;
+}
+
+.firstCards {
+    transform: rotate(1deg);
+}
+
+.secondCards {
+    transform: rotate(-1deg);
+}
+
+.buttonCards {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.imgArrowPhoto {
+    font-size: 2vw;
+    color: var(--text-orange);
+}
+
+.photoBlock {
+    position: relative;
+    height: 98%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.particleFirst, .particleSecond {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    object-fit: fill;
+    width: 2.8vw;
+    height: 4vh;
+    z-index: 1;
+}
+
+.particleSecond {
+    left: 0;
+}
+
+.firstTextDescriptionEvent, .secondTextDescriptionEvent{
+    color: var(--text-orange);
+    transform: rotate(-3.65deg);
+    font-size: 1vw;
+}
+
+.firstTextDescriptionEvent {
+    align-self: center;
+}
+
+.secondTextDescriptionEvent {
+    margin-left: 1vw;
+    transform: rotate(-5.65deg);
+
+}
+
+.firstTextNameEvent, .secondTextNameEvent{
+    margin-top: 2vh;
+    transform: rotate(-3.65deg);
+    font-size: 1vw;
+    color: black;
+    margin-bottom: 0.4vh;
+}
+
+.secondTextNameEvent {
+    transform: rotate(0deg);  
+    margin-top: 1vh;
+}
+

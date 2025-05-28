@@ -1,20 +1,16 @@
 import HeaderStyles from './header.module.scss'
-import HeaderSrc from "../../assets/images/лого.svg"
-import iconButtonSrc from "../../assets/images/Vector.svg"
 import contactsSrc from "../../assets/images/contactsUp.svg"
-import { Link } from 'react-router-dom'
+import { Button } from 'primereact/button';
 
 export const Header = () => {
     return (
         <div className={HeaderStyles.mainHeaderBlock}>
-            <button className={HeaderStyles.buttonChoice}>
-                <img src={iconButtonSrc} className={HeaderStyles.iconButton} />
-            </button>
-
-            <Link to="/" className={HeaderStyles.buttonHeader}>
-                <img src={HeaderSrc} className={HeaderStyles.headerIcon}/>
-            </Link>
-
+            <Button 
+                outlined
+                icon="pi pi-bars"
+                className={HeaderStyles.buttonChoice}
+                />
+            <Button label='момент.лаб' className={HeaderStyles.buttonHeader}/>
             <img className={HeaderStyles.contactImg} src={contactsSrc}/>  
         </div>
     );

@@ -1,3 +1,7 @@
+import 'primereact/resources/primereact.min.css';          // core-стили PrimeReact
+import 'primeicons/primeicons.css';                        // стили иконок
+
+
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { MainPage } from './pages/mainPage'
 import { TestPage } from './pages/testPage';

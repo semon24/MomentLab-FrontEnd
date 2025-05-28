@@ -1,3 +1,5 @@
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -41,16 +43,19 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
+  border: none !important;
+
 }
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button:active {
+  transform: scale(0.95); /* Легкое уменьшение */
+  opacity: 0.96; /* Затемнение */
+  filter: drop-shadow(0 0 0.05vw rgba(0,0,0,0.3)); /* Эффект "нажатия" */
 }
 
 @media (prefers-color-scheme: light) {
@@ -90,3 +95,10 @@ button:focus-visible {
   font-display: swap;   /* Важно для производительности */
 }
 
+@font-face {
+  font-family: 'MainBoldFont';
+  src: url('./assets/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: normal;  /* или 400 */
+  font-style: normal;
+  font-display: swap;   /* Важно для производительности */
+}

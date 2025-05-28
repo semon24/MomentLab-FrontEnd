@@ -1,0 +1,85 @@
+.userFormBlock {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+
+}
+
+.middleUserForm {
+    width: 70vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerUserForm {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.headerTextBlack, .headerTextOrandge {
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.headerTextOrandge {
+    color: var(--text-orange);
+}
+
+.userForm {
+    width: 100%;
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input, textarea{
+    margin-bottom: 4vh;
+    border: solid 0.2vw var(--text-orange);
+    border-radius: 0.5vw;
+    width: 30vw;
+    height: 5vh;
+    padding-left: 1vw;
+    font-size: 1vw;
+}
+
+textarea {
+    height: 10vh;
+}
+
+.consentProcessingBlock {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sendRequest {
+    font-family: 'MainBoldFont';
+    color: white;
+    background-color: #11224E;
+    border-radius: 4vw;
+    font-size: 2vw;
+    height: 10vh;
+    width: 30vw;
+
+}

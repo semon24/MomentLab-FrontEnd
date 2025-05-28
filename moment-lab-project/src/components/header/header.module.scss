@@ -1,67 +1,18 @@
-.button {
-    padding: 0;
-    width: 18.6vw;            
-    height: 10vh;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
+.buttonHeader {
+    width: 17vw;
+    height: 7vh;
+    background-color: var(--text-orange);
+    border-radius: 4vw;
 
-    display: inline-flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden
+
+    color: white;
+    margin: 0 auto;
+
+    font-size: 2vw;
 }
-
-.buttonHeader:active .headerIcon {
-    transform: scale(0.95); /* Легкое уменьшение */
-    opacity: 0.8; /* Затемнение */
-    filter: drop-shadow(0 0 4px rgba(0,0,0,0.3)); /* Эффект "нажатия" */
-}
-
-.headerIcon {
-    object-fit: contain;
-    width: 40vw;            
-    height: 10vh;
-  }
-
-.buttonChoice {
-    position: absolute;
-    left: 20vw;
-    transform: translateX(-50%);
-    margin-left: 5vw;
-
-    -webkit-tap-highlight-color: transparent;
-    padding: 0;
-
-    width: 3.3vw;
-    height: 4vh;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-
-    display: inline-flex;  
-    align-items: center;
-    justify-content: center;
-    overflow: hidden
-
-}
-
-.buttonChoice:active .iconButton {
-    transform: scale(0.95); /* Легкое уменьшение */
-    opacity: 0.8; /* Затемнение */
-    filter: drop-shadow(0 0 4px rgba(0,0,0,0.3)); /* Эффект "нажатия" */
-  }
-
-.buttonChoice:focus, .buttonHeader:focus {
-    outline: none;
-}
-
-.iconButton {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    transition: all 0.2s ease;
-  }
 
 .mainHeaderBlock {
     background-color: white;
@@ -75,6 +26,12 @@
     height: 15vh;
     z-index: 999;
 
+}
+
+.buttonChoice {
+    left: 20vw;
+    position: absolute;
+    font-size: 3vw;
 }
 
 .contactImg {
