@@ -42,7 +42,7 @@
     flex-direction: column;
 }
 
-input, textarea{
+input[type="text"], textarea{
     margin-bottom: 4vh;
     border: solid 0.2vw var(--text-orange);
     border-radius: 0.5vw;
@@ -59,11 +59,21 @@ textarea {
 .consentProcessingBlock {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
+    
+    width: 60vw;
+    height: 5vh;
+    margin-bottom: 3vh;
+    font-family: 'MainFont';
+    text-decoration-line: underline;
+    font-size: 1vw;
 }
 
-
-
+.customCheckboxInput {
+    height: 2vh;
+    width: 2vw;
+}
 
 
 

@@ -4,7 +4,8 @@ import {EventsWithMeaning} from "../components/eventsWithMeaning/eventsWithMeani
 import { OurTasks } from "../components/ourTasks/ourTasks";
 import {ReasonsOfMeetings} from "../components/reasonsOfMeetings/reasonsOfMeetings"
 import OurSolutions from '../components/ourSolutions/ourSolutions'
-import UserForm from "../components/userForm/userFrom";
+import UserForm from "../components/userForm/userForm";
+import Basement from "../components/basement/basement";
 
 export const MainPage = () => {
     return (
@@ -16,6 +17,7 @@ export const MainPage = () => {
             <ReasonsOfMeetings/>
             <OurSolutions/>
             <UserForm/>
+            <Basement/>
         </div>
     );
 };

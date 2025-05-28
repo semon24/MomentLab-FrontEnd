@@ -1,7 +1,9 @@
-import UserFormStyle from './userFrom.module.scss'
+import UserFormStyle from './userForm.module.scss'
 import { Button } from 'primereact/button'
+import { useState } from 'react';
 
 const UserForm = () => {
+    const [checked, setChecked] = useState<boolean>(false);
 
     return (
         <div className={UserFormStyle.userFormBlock}>
@@ -18,7 +20,14 @@ const UserForm = () => {
                     <input type="text" placeholder="Имя"></input>
                     <textarea placeholder="Опишите планируемое событие"/>
                     <div className={UserFormStyle.consentProcessingBlock}>
-                        
+                        <input 
+                            type="checkbox" 
+                            checked={checked}
+                            onChange={(e) => setChecked(e.target.checked)}
+                            className={UserFormStyle.customCheckboxInput}
+                            id="consentCheckbox"
+                        />
+                        <Button label='Согласие с услвоиями и положениями обработки персональных данных'/>
                     </div>
                 </div>
 
