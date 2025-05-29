@@ -2,7 +2,7 @@
     position: relative;
     margin-top: 10vh;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
 }
@@ -24,7 +24,7 @@
 
 .middleSolutionBlock {
     width: 60vw;
-    height: 70vh;
+    height: 90vh;
     display: flex;
     flex-direction: column
 
@@ -74,18 +74,18 @@
     overflow-x: auto; /* Горизонтальный скролл */
     gap: 2vw; /* Отступ между элементами */
     width: 100%;
-    height: 60vh;
+    height: min(57vh, 30vw);
 
+    //border: solid 2px red;
     flex-wrap: nowrap;
     scrollbar-width: auto;
     padding: 1vw 1vh;
 }
 
 .firstCards, .secondCards {
-    flex: 0 0 20vw;
-    height: 50vh;
+    height: min(25vw, 50vh);
+    min-width: min(20vw, 40vh);
     border: solid 0.2vw;
-    min-width: 10rem;
     border-color: #7F94CA;
     padding: 0.5vw;
 }
@@ -116,7 +116,12 @@
 
     display: flex;
     flex-direction: column;
+
+    img {
+        width: min(20vw, 40vh);
+    }
 }
+
 
 
 .particleFirst, .particleSecond {
@@ -135,9 +140,10 @@
 }
 
 .firstTextDescriptionEvent, .secondTextDescriptionEvent{
+    
     color: var(--text-orange);
     transform: rotate(-3.65deg);
-    font-size: 1vw;
+    font-size: min(1vw, 2vh);
 }
 
 .firstTextDescriptionEvent {
@@ -152,8 +158,7 @@
 
 .firstTextNameEvent, .secondTextNameEvent{
     margin-top: 2vh;
-    transform: rotate(-3.65deg);
-    font-size: 1vw;
+    font-size: min(1vw, 2vh);
     color: black;
     margin-bottom: 0.4vh;
 }
