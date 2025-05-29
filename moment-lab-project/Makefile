@@ -1,4 +1,4 @@
-all: bulid run
+all: build run
 
 build:
 	docker build . -t momentlab-frontend:latest
