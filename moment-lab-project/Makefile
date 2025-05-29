@@ -1,8 +1,8 @@
+all: build run
+
 build:
-	docker build . -t cr.yandex/crpcad5uhlb7oh89ja0v/potencial-frontend
-push:
-	docker push cr.yandex/crpcad5uhlb7oh89ja0v/potencial-frontend
+	docker build . -t momentlab-frontend:latest
 run:
-	docker run --detach --rm --name potencial-frontend -p 8000:8000 cr.yandex/crpcad5uhlb7oh89ja0v/potencial-frontend
+	docker run -p 8000:8000 momentlab-frontend:latest
 stop:
-	docker stop potencial-frontend
+	docker stop momentlab-frontend:latest
